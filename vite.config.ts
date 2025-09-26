@@ -4,7 +4,4 @@ import { defineConfig } from 'vite';
 
 export default defineConfig({
 	plugins: [tailwindcss(), sveltekit()],
-	server: {
-		allowedHosts: ['405228c438ba.ngrok-free.app']
-	}
 });

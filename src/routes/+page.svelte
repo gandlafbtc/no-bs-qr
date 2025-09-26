@@ -62,7 +62,7 @@
         <div class="mb-4 w-80 h-80">
             {@html updatedSVG}
         </div>
-        <button on:click={downloadQR} class="bg-blue-500 text-white p-2 rounded">
+        <button onclick={downloadQR} class="bg-blue-500 text-white p-2 rounded">
             Download QR Code
         </button>
 </div>
