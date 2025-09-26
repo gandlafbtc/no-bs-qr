@@ -18,3 +18,15 @@
 </svelte:head>
 
 {@render children?.()}
+
+<footer class="fixed bottom-0 w-full py-3 text-center text-sm text-gray-600 bg-white bg-opacity-80 shadow-md">
+	<div class="flex justify-center gap-4">
+		<a href="https://github.com/gandlafbtc/no-bs-qr.git" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors">
+			GitHub
+		</a>
+		<span>|</span>
+		<a href="https://gandlaf.com" target="_blank" rel="noopener noreferrer" class="hover:text-black transition-colors">
+			gandlaf.com
+		</a>
+	</div>
+</footer>
