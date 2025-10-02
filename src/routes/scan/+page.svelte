@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { toast } from "$lib/helper";
+    import { copyTextToClipboard, toast } from "$lib/helper";
     import Scanner from "$lib/Scanner.svelte";
 	const DEFAULT_DATA = "Nothing scanned yet"
 	let scanned = $state(DEFAULT_DATA)
@@ -14,6 +14,7 @@
 			{scanned}
 		</p>
 		<button class="cursor-pointer p-2  rounded-md bg-black text-white hover:opacity-100 opacity-80" onclick={()=> {
+			copyTextToClipboard(scanned)
 			toast.info("copied!")
 		}}>
 	Copy	

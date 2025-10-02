@@ -1,5 +1,5 @@
 <script lang="ts">
-    import { toast } from "$lib/helper";
+    import { copyTextToClipboard, toast } from "$lib/helper";
     import QrScanner from "qr-scanner";
     import Dropzone from "svelte-file-dropzone";
 
@@ -18,6 +18,7 @@
                 <button
                     class="cursor-pointer p-2 rounded-md bg-black text-white hover:opacity-100 opacity-80"
                     onclick={() => {
+                        copyTextToClipboard(scannedResult)
                         toast.info("copied!");
                     }}
                 >
