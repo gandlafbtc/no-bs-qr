@@ -50,11 +50,11 @@
 					>
 					<div class="flex gap-2">
 						<span>speed</span>
-						 <input type="range"  bind:value={speed} max={10} min={1} step={1} />
+						 <input type="range" class="w-full" bind:value={speed} max={10} min={1} step={1} />
 					</div>
 					<div class="flex gap-2">
 						<span class="w-12">size</span>
-						 <input type="range"  bind:value={size} max={10} min={1} step={1} />
+						 <input type="range"  class="w-full" bind:value={size} max={10} min={1} step={1} />
 					</div>
 					</div>
 	</div>
